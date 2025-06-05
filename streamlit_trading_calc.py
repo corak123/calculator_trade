@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Kalkulator Trading Crypto", layout="centered")
 
-st.title("📊 Kalkulator Trading Token")
+st.title("📊 Kalkulator Token")
 st.write("Hitung jumlah token, Take Profit, Stop Loss, dan estimasi keuntungan/kerugian berdasarkan modal dan target.")
 
 # Input
