@@ -10,7 +10,13 @@ modal_type = st.radio("Pilih jenis modal:", ["Rupiah (IDR)", "USDT"])
 
 # Input umum
 harga_usdt = st.number_input("💵 Harga 1 USDT ke Rupiah", min_value=0.0, value=16343.0)
-harga_beli = st.number_input("📈 Harga beli token (USDT)", min_value=0.0)
+#harga_beli = st.number_input("📈 Harga beli token (USDT)", min_value=0.0)
+harga_beli = st.number_input(
+    "📈 Harga beli token (USDT)",
+    min_value=0.0,
+    format="%.10f",
+    step=0.00000001
+)
 target_profit_pct = st.number_input("🎯 Target profit (%)", min_value=0.0, value=5.0)
 stop_loss_pct = st.number_input("⚠️ Stop loss (%)", min_value=0.0, value=3.0)
 
